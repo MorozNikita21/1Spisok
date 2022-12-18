@@ -1,0 +1,36 @@
+import java.util.*;
+public class Main {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter first data:");
+        String data=sc.next();
+        List <String> list=new List<String>(data);
+        System.out.println("Enter List (until data!=0):");
+        data=sc.next();
+        while(!(data.equals("aue"))){
+            list.add(data);
+            data=sc.next();
+        }
+        list.print();
+        System.out.println("Does the list have the equal element?: "+list.equalelem());
+        System.out.println("Enter the element to remove from the end:");
+        data= sc.next();
+        list.remove(data);
+        list.print();
+        System.out.println("Enter first data:");
+        int data2=sc.nextInt();
+        List <Integer> list2=new List<Integer>(data2);
+        System.out.println("Enter List (until data!=0):");
+        data2=sc.nextInt();
+        while(data2 != 0){
+            list2.add(data2);
+            data2=sc.nextInt();
+        }
+        list2.print();
+        System.out.println("Does the list have the equal element?: "+list2.equalelem());
+        System.out.println("Enter the element to remove from the end:");
+        data2= sc.nextInt();
+        list2.remove(data2);
+        list2.print();
+    }
+}
