@@ -1,0 +1,20 @@
+public class ListItem <Item> {
+    private Item data;
+    private ListItem<Item> next;
+    ListItem(Item d){
+        data=d;
+        next=null;
+    }
+    public Item getData() {
+        return data;
+    }
+    public void setData(Item data) {
+        this.data = data;
+    }
+    public ListItem<Item> getNext() {
+        return next;
+    }
+    public void setNext(ListItem<Item> li) {
+        next = li;
+    }
+}
